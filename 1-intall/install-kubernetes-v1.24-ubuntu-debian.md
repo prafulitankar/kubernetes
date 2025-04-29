@@ -19,6 +19,8 @@ sudo wget https://raw.githubusercontent.com/lerndevops/labs/master/scripts/insta
 sudo chmod 755 /tmp/installK8S.sh
 sudo bash /tmp/installK8S.sh
 
+#Flush IpTables Rules
+iptables -F
 # Validate 
 
    docker -v
